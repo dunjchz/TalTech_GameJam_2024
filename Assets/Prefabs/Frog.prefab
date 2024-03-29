@@ -105,41 +105,41 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: -4.656613e-10
-      inSlope: 1.4792194
-      outSlope: 1.4792194
+      inSlope: 0.032677513
+      outSlope: 0.032677513
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.039619662
+      outWeight: 0.32161918
     - serializedVersion: 3
-      time: 0.029553924
-      value: 0.19955632
-      inSlope: 5.9872255
-      outSlope: 5.9872255
+      time: 0.2
+      value: 0
+      inSlope: 1.2105135
+      outSlope: 1.2105135
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.27412382
-      outWeight: 0.012635947
+      outWeight: 1
     - serializedVersion: 3
-      time: 0.22738269
-      value: 1.0213797
-      inSlope: 0.032170285
-      outSlope: 0.032170285
+      time: 0.26286003
+      value: 0.98505175
+      inSlope: 0.005239872
+      outSlope: 0.005239872
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.33333334
+      outWeight: 0.31079742
     - serializedVersion: 3
-      time: 0.4858842
-      value: 0.053803556
-      inSlope: -1.5004553
-      outSlope: -1.5004553
+      time: 0.6574971
+      value: 0.8601998
+      inSlope: -0.8575684
+      outSlope: -0.8575684
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.41644493
+      inWeight: 0.12230586
+      outWeight: 0.44364637
     - serializedVersion: 3
-      time: 0.5619067
+      time: 0.75
       value: 0
       inSlope: -0.0020279558
       outSlope: -0.0020279558
@@ -160,7 +160,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   jumpDistance: 10
-  jumpDuration: 0.5
+  jumpDuration: 0.4
 --- !u!50 &8708195406466176967
 Rigidbody2D:
   serializedVersion: 4
