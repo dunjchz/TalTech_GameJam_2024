@@ -99,57 +99,72 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c656e1d29726419f937f70eba19cbd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationCurve:
+  jumpAnimationCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: -4.656613e-10
-      inSlope: 0.032677513
-      outSlope: 0.032677513
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.32161918
-    - serializedVersion: 3
-      time: 0.2
       value: 0
-      inSlope: 1.2105135
-      outSlope: 1.2105135
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.27412382
-      outWeight: 1
-    - serializedVersion: 3
-      time: 0.26286003
-      value: 0.98505175
-      inSlope: 0.005239872
-      outSlope: 0.005239872
-      tangentMode: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.31079742
+      outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.6574971
-      value: 0.8601998
-      inSlope: -0.8575684
-      outSlope: -0.8575684
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.12230586
-      outWeight: 0.44364637
-    - serializedVersion: 3
-      time: 0.75
-      value: 0
-      inSlope: -0.0020279558
-      outSlope: -0.0020279558
-      tangentMode: 0
+      time: 0.3
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.17519285
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.7
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
       value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  knockbackAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.48663932
+      value: 0.9333725
+      inSlope: -0.3511443
+      outSlope: -0.3511443
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040517963
+      outWeight: 0.41125992
+    - serializedVersion: 3
+      time: 0.5172672
+      value: 0.47699493
       inSlope: 0
       outSlope: 0
       tangentMode: 136

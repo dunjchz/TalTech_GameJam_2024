@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class FrogController : MonoBehaviour
 {
-    public AnimationCurve animationCurve;
+    public AnimationCurve jumpAnimationCurve;
+    public AnimationCurve knockbackAnimationCurve;
     private Coroutine jumpCoroutine = null;
 
     public float jumpDistance = 3;
@@ -26,12 +27,12 @@ public class FrogController : MonoBehaviour
             // Jump if there is any input
             if (direction.magnitude != 0)
             {
-                jumpCoroutine = StartCoroutine(AnimateJump(direction, jumpDuration, jumpDistance));
+                jumpCoroutine = StartCoroutine(AnimateJump(direction, jumpDuration, jumpDistance, jumpAnimationCurve));
             }
         }
     }
 
-    IEnumerator AnimateJump(Vector2 direction, float duration, float distance)
+    IEnumerator AnimateJump(Vector2 direction, float duration, float distance, AnimationCurve animationCurve)
     {
         float elapsed = 0f;
         while (elapsed <= duration)
@@ -60,7 +61,7 @@ public class FrogController : MonoBehaviour
                 collision.contacts[0].point.x,
                 collision.contacts[0].point.y);
             var direction = rb.position - collisionPosition;
-            jumpCoroutine = StartCoroutine(AnimateJump(direction, jumpDuration, jumpDistance / 2));
+            jumpCoroutine = StartCoroutine(AnimateJump(direction, jumpDuration / 1.5f, jumpDistance / 2, knockbackAnimationCurve));
         }
     }
 }
