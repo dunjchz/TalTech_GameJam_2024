@@ -85,7 +85,7 @@ public class ChefRayCast : MonoBehaviour
 
     void LookRight()
     {
-        spriteRenderer.sprite = downSprite;
+        spriteRenderer.sprite = rightSprite;
         rayDirection = Vector2.right;
     }
 }
