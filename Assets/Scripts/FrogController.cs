@@ -123,5 +123,11 @@ public class FrogController : MonoBehaviour
         {
             lockScript.ActivatePanel();
         }
+
+        var dialogScript = other.gameObject.GetComponent<DialogObject>();
+        if (dialogScript)
+        {
+            dialogScript.StartDialog();
+        }
     }
 }
