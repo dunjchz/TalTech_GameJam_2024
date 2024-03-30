@@ -42,10 +42,61 @@ public class FrogController : MonoBehaviour
             float curvePercent = animationCurve.Evaluate(percent);
             rb.velocity = direction.normalized * Mathf.LerpUnclamped(0, distance, curvePercent);
 
+            // Check for collisions with screen edges
+            CheckScreenEdgeCollisions();
+
             yield return null;
         }
-        rb.velocity = new(0, 0);
+        rb.velocity = new Vector2(0, 0);
         jumpCoroutine = null;
+    }
+
+    void CheckScreenEdgeCollisions()
+    {
+        Vector2 screenPosition = Camera.main.WorldToScreenPoint(transform.position);
+        float screenWidth = Screen.width;
+        float screenHeight = Screen.height;
+
+        // Check left edge
+        if (screenPosition.x <= 0)
+        {
+            Vector2 knockbackDirection = Vector2.right;
+            StartCoroutine(AnimateKnockback(knockbackDirection));
+        }
+        // Check right edge
+        else if (screenPosition.x >= screenWidth)
+        {
+            Vector2 knockbackDirection = Vector2.left;
+            StartCoroutine(AnimateKnockback(knockbackDirection));
+        }
+        // Check bottom edge
+        if (screenPosition.y <= 0)
+        {
+            Vector2 knockbackDirection = Vector2.up;
+            StartCoroutine(AnimateKnockback(knockbackDirection));
+        }
+        // Check top edge
+        else if (screenPosition.y >= screenHeight)
+        {
+            Vector2 knockbackDirection = Vector2.down;
+            StartCoroutine(AnimateKnockback(knockbackDirection));
+        }
+    }
+
+    IEnumerator AnimateKnockback(Vector2 direction)
+    {
+        float duration = jumpDuration / 1.5f;
+        float knockbackDistance = jumpDistance / 2;
+        float elapsed = 0f;
+
+        while (elapsed <= duration)
+        {
+            elapsed += Time.deltaTime;
+            float percent = Mathf.Clamp01(elapsed / duration);
+            rb.velocity = direction.normalized * Mathf.LerpUnclamped(0, knockbackDistance, percent);
+            yield return null;
+        }
+        rb.velocity = Vector2.zero;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -56,7 +107,7 @@ public class FrogController : MonoBehaviour
         {
             StopCoroutine(jumpCoroutine);
             jumpCoroutine = null;
-            rb.velocity = new(0, 0);
+            rb.velocity = new Vector2(0, 0);
             Vector2 collisionPosition = new(
                 collision.contacts[0].point.x,
                 collision.contacts[0].point.y);
