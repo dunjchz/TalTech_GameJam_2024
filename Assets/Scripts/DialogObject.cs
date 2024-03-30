@@ -9,6 +9,8 @@ public class DialogObject : MonoBehaviour
     public string[] dialogTextLines;
     private int index = 0;
 
+    private bool isTyping = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +35,7 @@ public class DialogObject : MonoBehaviour
 
     public void ContinueDialog()
     {
+        if (isTyping) return;
         index += 1;
 
         if (index < dialogTextLines.Length)
@@ -48,12 +51,14 @@ public class DialogObject : MonoBehaviour
 
     IEnumerator Typing()
     {
+        isTyping = true;
         textDisplay.SetText("");
         foreach (char letter in dialogTextLines[index].ToCharArray())
         {
             textDisplay.text += letter;
             yield return new WaitForSecondsRealtime(0.02f);
         }
+        isTyping = false;
     }
 
     private void ResetDialog()
