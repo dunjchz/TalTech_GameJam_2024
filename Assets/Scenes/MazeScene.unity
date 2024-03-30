@@ -12585,6 +12585,7 @@ GameObject:
   - component: {fileID: 1158135252}
   - component: {fileID: 1158135251}
   - component: {fileID: 1158135253}
+  - component: {fileID: 1158135254}
   m_Layer: 0
   m_Name: Mushroom1
   m_TagString: Untagged
@@ -12704,6 +12705,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.92, y: 1.92}
   m_EdgeRadius: 0
+--- !u!95 &1158135254
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158135250}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e0754717602effe4bad39d7da577cf6a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1158250306 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4259886233088824857, guid: 5d0959b861d16ff438addfb985327415, type: 3}
