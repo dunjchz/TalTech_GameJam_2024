@@ -177,6 +177,8 @@ MonoBehaviour:
     m_RotationOrder: 4
   jumpDistance: 5
   jumpDuration: 0.2
+  Controller: {fileID: -8542710033927078916}
+  Renderer: {fileID: -55971132954051099}
 --- !u!50 &8708195406466176967
 Rigidbody2D:
   serializedVersion: 4
