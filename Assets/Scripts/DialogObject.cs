@@ -25,6 +25,7 @@ public class DialogObject : MonoBehaviour
 
     public void StartDialog()
     {
+        ResetDialog();
         Time.timeScale = 0f;
         panel.gameObject.SetActive(true);
         StartCoroutine(Typing());
