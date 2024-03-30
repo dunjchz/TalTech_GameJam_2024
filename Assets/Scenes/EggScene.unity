@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &68525272 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6731067240109376676, guid: 80721e397a35846b78c05994d3e0f9b5, type: 3}
-  m_PrefabInstance: {fileID: 1365676400}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &73589199
 GameObject:
   m_ObjectHideFlags: 0
@@ -3519,6 +3514,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e91c5ab187e544f71b5c50257dc56361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneTransition: {fileID: 1475647891}
+  eggSceneController: {fileID: 746218821}
   inputField1: {fileID: 73589201}
   inputField2: {fileID: 1097785874}
   inputField3: {fileID: 179807948}
@@ -4103,10 +4100,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6731067240109376676, guid: 80721e397a35846b78c05994d3e0f9b5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1546384479}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80721e397a35846b78c05994d3e0f9b5, type: 3}
 --- !u!1 &1388970237
 GameObject:
@@ -4562,6 +4556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionPoint: {fileID: 1546384474}
+  egg: 0
 --- !u!1 &1479923787
 GameObject:
   m_ObjectHideFlags: 0
@@ -4834,21 +4829,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4363127784570244080, guid: 80721e397a35846b78c05994d3e0f9b5, type: 3}
   m_PrefabInstance: {fileID: 1365676400}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1546384479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68525272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e91c5ab187e544f71b5c50257dc56361, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputField1: {fileID: 73589201}
-  inputField2: {fileID: 1097785874}
-  inputField3: {fileID: 179807948}
 --- !u!1 &1593873014
 GameObject:
   m_ObjectHideFlags: 0
