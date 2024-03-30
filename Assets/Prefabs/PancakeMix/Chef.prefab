@@ -45,6 +45,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f745576344f4688baa23aace389b1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allowLeft: 0
+  allowRight: 0
+  allowDown: 0
+  leftSprite: {fileID: 21300000, guid: 77c308716610940f4a6cdf2b5665211a, type: 3}
+  rightSprite: {fileID: 21300000, guid: c73fcb3afc6974f089d181e89dd65dec, type: 3}
+  downSprite: {fileID: 21300000, guid: 2545d287d8dc44cf5aef69d2b6a37f5f, type: 3}
 --- !u!212 &3917991628073554831
 SpriteRenderer:
   m_ObjectHideFlags: 0
