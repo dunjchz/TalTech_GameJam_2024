@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class StartingScreenScript : MonoBehaviour
 {
     public GameObject menuPanel;
+    //public GameObject eggPanel;
 
     private void Start()
     {
@@ -62,6 +63,4 @@ public class StartingScreenScript : MonoBehaviour
     {
         return Time.timeScale == 0f;
     }
-
-
 }
