@@ -20,7 +20,7 @@ public class FrogController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        Renderer= GetComponent<SpriteRenderer>();
+        Renderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -36,7 +36,7 @@ public class FrogController : MonoBehaviour
                 Renderer.flipX = direction.x < 0;
                 jumpCoroutine = StartCoroutine(AnimateJump(direction, jumpDuration, jumpDistance, jumpAnimationCurve));
                 Controller.SetBool("IsMoving", true);
-               
+
             }
             else
             {
@@ -149,6 +149,12 @@ public class FrogController : MonoBehaviour
         if (dialogScript)
         {
             dialogScript.StartDialog();
+        }
+
+        var pickupScript = other.gameObject.GetComponent<Pickup>();
+        if (pickupScript)
+        {
+            pickupScript.TriggerPickup();
         }
     }
 }
