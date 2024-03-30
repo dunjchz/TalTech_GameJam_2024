@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: 8c70e6c6142124c8ca91ff78e5d3dade, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f734e779830414584a79da67cb1f509c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.56, y: 2.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -174,8 +174,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  jumpDistance: 10
-  jumpDuration: 0.4
+  jumpDistance: 5
+  jumpDuration: 0.2
 --- !u!50 &8708195406466176967
 Rigidbody2D:
   serializedVersion: 4
