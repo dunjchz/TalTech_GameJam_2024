@@ -12,6 +12,8 @@ public class FrogController : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    private bool canBounce = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,7 @@ public class FrogController : MonoBehaviour
 
     IEnumerator AnimateJump(Vector2 direction, float duration, float distance, AnimationCurve animationCurve)
     {
+        canBounce = true;
         float elapsed = 0f;
         while (elapsed <= duration)
         {
@@ -49,6 +52,7 @@ public class FrogController : MonoBehaviour
         }
         rb.velocity = new Vector2(0, 0);
         jumpCoroutine = null;
+        canBounce = false;
     }
 
     void CheckScreenEdgeCollisions()
@@ -85,6 +89,7 @@ public class FrogController : MonoBehaviour
 
     IEnumerator AnimateKnockback(Vector2 direction)
     {
+        canBounce = false;
         float duration = jumpDuration / 1.5f;
         float knockbackDistance = jumpDistance / 2;
         float elapsed = 0f;
@@ -97,13 +102,18 @@ public class FrogController : MonoBehaviour
             yield return null;
         }
         rb.velocity = Vector2.zero;
+        if (jumpCoroutine is not null)
+        {
+            StopCoroutine(jumpCoroutine);
+            jumpCoroutine = null;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("hit");
 
-        if (jumpCoroutine is not null)
+        if (jumpCoroutine is not null && canBounce)
         {
             StopCoroutine(jumpCoroutine);
             jumpCoroutine = null;
@@ -112,7 +122,7 @@ public class FrogController : MonoBehaviour
                 collision.contacts[0].point.x,
                 collision.contacts[0].point.y);
             var direction = rb.position - collisionPosition;
-            jumpCoroutine = StartCoroutine(AnimateJump(direction, jumpDuration / 1.5f, jumpDistance / 2, knockbackAnimationCurve));
+            jumpCoroutine = StartCoroutine(AnimateKnockback(direction));
         }
     }
 
