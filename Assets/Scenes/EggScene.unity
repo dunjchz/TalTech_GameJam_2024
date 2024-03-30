@@ -4034,6 +4034,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1998657102798249180, guid: 80721e397a35846b78c05994d3e0f9b5, type: 3}
+      propertyPath: Controller
+      value: 
+      objectReference: {fileID: 1546384479}
+    - target: {fileID: 1998657102798249180, guid: 80721e397a35846b78c05994d3e0f9b5, type: 3}
       propertyPath: jumpDistance
       value: 5
       objectReference: {fileID: 0}
@@ -4827,6 +4831,11 @@ CanvasRenderer:
 --- !u!4 &1546384474 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4363127784570244080, guid: 80721e397a35846b78c05994d3e0f9b5, type: 3}
+  m_PrefabInstance: {fileID: 1365676400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1546384479 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -8542710033927078916, guid: 80721e397a35846b78c05994d3e0f9b5, type: 3}
   m_PrefabInstance: {fileID: 1365676400}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1593873014

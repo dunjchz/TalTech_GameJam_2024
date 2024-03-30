@@ -11,11 +11,14 @@ public class FrogController : MonoBehaviour
     public float jumpDuration = 0.5f;
 
     private Rigidbody2D rb;
+    public Animator Controller;
+    public SpriteRenderer Renderer;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        Renderer= GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -24,10 +27,18 @@ public class FrogController : MonoBehaviour
         if (jumpCoroutine is null)
         {
             Vector2 direction = new(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+            float magnitude = direction.magnitude;
             // Jump if there is any input
-            if (direction.magnitude != 0)
+            if (magnitude != 0)
             {
+                Renderer.flipX = direction.x < 0;
                 jumpCoroutine = StartCoroutine(AnimateJump(direction, jumpDuration, jumpDistance, jumpAnimationCurve));
+                Controller.SetBool("IsMoving", true);
+               
+            }
+            else
+            {
+                Controller.SetBool("IsMoving", false);
             }
         }
     }
