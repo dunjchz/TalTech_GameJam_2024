@@ -3937,7 +3937,7 @@ GameObject:
   - component: {fileID: 1349838957}
   - component: {fileID: 1349838956}
   m_Layer: 0
-  m_Name: chicken2
+  m_Name: Chicken2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4077,9 +4077,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000047683716, y: 0}
+  m_Offset: {x: -0.0007373477, y: 0.59392065}
   serializedVersion: 2
-  m_Radius: 2.1
+  m_Radius: 2.6938581
 --- !u!114 &1349838957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4095,8 +4095,16 @@ MonoBehaviour:
   panel: {fileID: 343027792}
   textDisplay: {fileID: 380041110}
   dialogTextLines:
-  - Hey
-  - Yo
+  - Press E to continue
+  - 'Konnrad: Huh, is this a farm? How am I supposed to know what a farm looks like?'
+  - "*Indeed, it was Konnrad\u2019s first time venturing outside the pond. I\u2019m
+    sure he\u2019ll be fine.*"
+  - "Konnrad: Ok, so the little fly said I need an egg\u2026 what is that? Where
+    can I find it?"
+  - 'Chicken: Wow I LOVE living on this FARM. I cannot WAIT for my sister to lay
+    an EGG which will be available at the COOP after you input the CODE.'
+  - "Chicken 2: B\u2019KAWK."
+  - "Konnrad: Guess that\u2019s that\u2026"
 --- !u!1001 &1365676400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6272,7 +6280,59 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 670181950235803924, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885905240325935964, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
+      propertyPath: m_fontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 885905240325935964, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
+      propertyPath: m_margin.w
+      value: 19.484562
+      objectReference: {fileID: 0}
+    - target: {fileID: 885905240325935964, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
+      propertyPath: m_margin.x
+      value: 38.94419
+      objectReference: {fileID: 0}
+    - target: {fileID: 885905240325935964, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
+      propertyPath: m_margin.y
+      value: 22.00921
+      objectReference: {fileID: 0}
+    - target: {fileID: 885905240325935964, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
+      propertyPath: m_margin.z
+      value: 34.719765
+      objectReference: {fileID: 0}
+    - target: {fileID: 885905240325935964, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180653956697856085, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
+      propertyPath: m_Color.a
+      value: 0.8784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180653956697856085, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.043137256
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180653956697856085, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180653956697856085, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.909804
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317150580065765659, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317150580065765659, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317150580065765659, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6602480268203177914, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
       propertyPath: m_Pivot.x
@@ -6300,11 +6360,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6602480268203177914, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -412.3557
+      value: -468.5466
       objectReference: {fileID: 0}
     - target: {fileID: 6602480268203177914, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -337.2712
+      value: -384.8595
       objectReference: {fileID: 0}
     - target: {fileID: 6602480268203177914, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6336,11 +6396,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6602480268203177914, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 18.583
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6602480268203177914, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -144
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6602480268203177914, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
