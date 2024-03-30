@@ -7,18 +7,11 @@ public class StartingScreenScript : MonoBehaviour
 {
     public GameObject menuPanel;
 
-    // Cache the screen bounds to avoid recalculating them every update
-    private float screenWidth;
-    private float screenHeight;
-
     private void Start()
     {
         menuPanel.SetActive(false);
         Time.timeScale = 1f;
 
-        // Calculate and cache the screen bounds
-        screenWidth = Screen.width;
-        screenHeight = Screen.height;
     }
 
     private void Update()

@@ -115,4 +115,13 @@ public class FrogController : MonoBehaviour
             jumpCoroutine = StartCoroutine(AnimateJump(direction, jumpDuration / 1.5f, jumpDistance / 2, knockbackAnimationCurve));
         }
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        var lockScript = other.gameObject.GetComponent<EggSceneController>();
+        if (lockScript)
+        {
+            lockScript.ActivatePanel();
+        }
+    }
 }
