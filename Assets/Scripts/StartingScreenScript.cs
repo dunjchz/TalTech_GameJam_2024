@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class StartingScreenScript : MonoBehaviour
 {
     public GameObject menuPanel;
-    //public GameObject eggPanel;
+    public string cutsceneSceneName; // The name of the scene containing the cutscene
 
     private void Start()
     {
@@ -62,5 +62,11 @@ public class StartingScreenScript : MonoBehaviour
     private bool IsGamePaused()
     {
         return Time.timeScale == 0f;
+    }
+
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+
     }
 }
