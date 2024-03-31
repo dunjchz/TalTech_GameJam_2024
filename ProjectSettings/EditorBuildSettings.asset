@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PancakeMixScene.unity
     guid: 2e32a56cbca454785934a5ba915d7bb4
+  - enabled: 1
+    path: Assets/Scripts/LastScene.unity
+    guid: 799f23a72608a449cab80440df2669c8
   m_configObjects: {}
