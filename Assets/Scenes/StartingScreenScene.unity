@@ -1834,7 +1834,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &732611775
@@ -4171,6 +4171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1974413639}
   - component: {fileID: 1974413638}
+  - component: {fileID: 1974413640}
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: Untagged
@@ -4289,6 +4290,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1974413640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974413637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe31ede753c92ae458b0c16da7e96d6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2025180294
 GameObject:
   m_ObjectHideFlags: 0
@@ -4443,3 +4456,4 @@ SceneRoots:
   - {fileID: 530909214}
   - {fileID: 1146574076}
   - {fileID: 1974413639}
+  - {fileID: 732611775}
