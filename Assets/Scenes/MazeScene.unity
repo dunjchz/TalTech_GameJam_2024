@@ -3186,11 +3186,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4363127784570244080, guid: 80721e397a35846b78c05994d3e0f9b5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.7699995
+      value: -1.84
       objectReference: {fileID: 0}
     - target: {fileID: 4363127784570244080, guid: 80721e397a35846b78c05994d3e0f9b5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.34
+      value: -1.22
       objectReference: {fileID: 0}
     - target: {fileID: 4363127784570244080, guid: 80721e397a35846b78c05994d3e0f9b5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12507,6 +12507,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8612977131978955987, guid: ba0c2fb396495e34db5d7a613bd74d05, type: 3}
   m_PrefabInstance: {fileID: 2049158676}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1134338868 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 885905240325935964, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
+  m_PrefabInstance: {fileID: 946831701}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1144919613 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4259886233088824857, guid: 5d0959b861d16ff438addfb985327415, type: 3}
@@ -14916,6 +14927,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72152ca8af48ca544843c06cd968c96c, type: 3}
+--- !u!222 &1376891226 stripped
+CanvasRenderer:
+  m_CorrespondingSourceObject: {fileID: 6941132288018792885, guid: 655f45abcb15d4f1181620cb1bc67c7f, type: 3}
+  m_PrefabInstance: {fileID: 946831701}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1388135118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18951,6 +18967,88 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739435179}
   m_CullTransparentMesh: 1
+--- !u!1 &1743920654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1743920657}
+  - component: {fileID: 1743920656}
+  - component: {fileID: 1743920655}
+  m_Layer: 0
+  m_Name: SceneTransition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1743920655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743920654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4751d1c9834d46df8269f7c618afe5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionPoint: {fileID: 0}
+  itemCollected: 0
+--- !u!58 &1743920656
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743920654}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!4 &1743920657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743920654}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.78, y: -3.76, z: -1.7921795}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1747302266
 GameObject:
   m_ObjectHideFlags: 0
@@ -18961,6 +19059,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1747302268}
   - component: {fileID: 1747302267}
+  - component: {fileID: 1747302270}
+  - component: {fileID: 1747302269}
   m_Layer: 0
   m_Name: blueberries
   m_TagString: Untagged
@@ -19035,6 +19135,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1747302269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747302266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5df3fcc69bfdf47e1a8094431b519b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 1376891226}
+  textDisplay: {fileID: 1134338868}
+  pickupText: Konnrad has acquired **BLUEBERRY**!!
+  sceneTransition: {fileID: 1743920655}
+--- !u!58 &1747302270
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747302266}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.38
 --- !u!4 &1756438909 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4259886233088824857, guid: 5d0959b861d16ff438addfb985327415, type: 3}
@@ -23083,3 +23234,4 @@ SceneRoots:
   - {fileID: 1747302268}
   - {fileID: 1657726132}
   - {fileID: 1158135252}
+  - {fileID: 1743920657}

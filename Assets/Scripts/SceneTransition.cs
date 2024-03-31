@@ -4,16 +4,16 @@ using UnityEngine.SceneManagement;
 public class SceneTransition : MonoBehaviour
 {
     public Transform transitionPoint; // Specific point in the next scene where the player will appear
-    public bool egg = false;
+    public bool itemCollected = false;
 
     private void OnTriggerEnter2D(Collider2D other)
 
     {
-        Debug.Log("Egg value: " + egg); // Check the value returned by GetEgg()
+        Debug.Log("Egg value: " + itemCollected); // Check the value returned by GetEgg()
         if (other.CompareTag("Player"))
         {
             // Check if the player is allowed to transition to the next scene based on the egg value
-            if (egg)
+            if (itemCollected)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 

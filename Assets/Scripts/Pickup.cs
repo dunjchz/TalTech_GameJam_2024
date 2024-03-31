@@ -6,11 +6,10 @@ public class Pickup : MonoBehaviour
 {
     public CanvasRenderer panel;
     public TMP_Text textDisplay;
-
-    public bool isPickedUp = false;
     public string pickupText;
 
     private bool isTyping = false;
+    public SceneTransition sceneTransition;
 
     void Update()
     {
@@ -32,7 +31,7 @@ public class Pickup : MonoBehaviour
         if (isTyping) return;
         panel.gameObject.SetActive(false);
         Time.timeScale = 1f;
-        isPickedUp = true;
+        if (sceneTransition) sceneTransition.itemCollected = true;
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<Collider2D>().enabled = false;
     }
