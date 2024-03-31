@@ -12597,6 +12597,8 @@ GameObject:
   - component: {fileID: 1158135251}
   - component: {fileID: 1158135253}
   - component: {fileID: 1158135254}
+  - component: {fileID: 1158135256}
+  - component: {fileID: 1158135255}
   m_Layer: 0
   m_Name: Mushroom1
   m_TagString: Untagged
@@ -12737,6 +12739,66 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1158135255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158135250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 608b25435cc4f43259d33a7ca878ed63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 1376891226}
+  textDisplay: {fileID: 1134338868}
+  dialogTextLines:
+  - 'Hallucija: Duuuuuuuuuuuuuuuuuuuude, welcome to my a-MAZE-ing home!'
+  - 'Konnrad: Huh? Why do you sound like that?'
+  - "Hallucija: Cuz I\u2019m enjoying lifeeeeee, you should try it out! Wait, you\u2019re
+    a\u2026 frog? How\u2019d you get here bro?"
+  - "Konnrad: Well, to be honest, I\u2019m just trying to have breakfast. I already
+    have an egg!"
+  - "Hallucija: Woahhhh\u2026 What's an egg?"
+  - "Konnrad: Nevermindddd\u2026 woah."
+  - "Hallucija: There ya go, now you\u2019re feelin\u2019 it. Good luck with breakfast!"
+  - "Hallucija: There ya go, now you\u2019re feelin\u2019 it. Good luck with breakfast!"
+--- !u!58 &1158135256
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158135250}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 4.71
 --- !u!4 &1158250306 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4259886233088824857, guid: 5d0959b861d16ff438addfb985327415, type: 3}
@@ -19149,7 +19211,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 1376891226}
   textDisplay: {fileID: 1134338868}
-  pickupText: Konnrad has acquired **BLUEBERRY**!!
+  pickupText: "Konnrad: Huzzah! That was wild. I guess these are berries. Neat, I\u2019ve
+    seen a lot of new things today. And I haven\u2019t even had breakfast yet!"
   sceneTransition: {fileID: 1743920655}
 --- !u!58 &1747302270
 CircleCollider2D:
