@@ -3186,7 +3186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4363127784570244080, guid: 80721e397a35846b78c05994d3e0f9b5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.51
+      value: -8.32
       objectReference: {fileID: 0}
     - target: {fileID: 4363127784570244080, guid: 80721e397a35846b78c05994d3e0f9b5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12596,8 +12596,6 @@ GameObject:
   - component: {fileID: 1158135251}
   - component: {fileID: 1158135253}
   - component: {fileID: 1158135254}
-  - component: {fileID: 1158135256}
-  - component: {fileID: 1158135255}
   m_Layer: 0
   m_Name: Mushroom1
   m_TagString: Untagged
@@ -12738,66 +12736,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1158135255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1158135250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 608b25435cc4f43259d33a7ca878ed63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panel: {fileID: 1376891226}
-  textDisplay: {fileID: 1134338868}
-  dialogTextLines:
-  - 'Hallucija: Duuuuuuuuuuuuuuuuuuuude, welcome to my a-MAZE-ing home!'
-  - 'Konnrad: Huh? Why do you sound like that?'
-  - "Hallucija: Cuz I\u2019m enjoying lifeeeeee, you should try it out! Wait, you\u2019re
-    a\u2026 frog? How\u2019d you get here bro?"
-  - "Konnrad: Well, to be honest, I\u2019m just trying to have breakfast. I already
-    have an egg!"
-  - "Hallucija: Woahhhh\u2026 What's an egg?"
-  - "Konnrad: Nevermindddd\u2026 woah."
-  - "Hallucija: There ya go, now you\u2019re feelin\u2019 it. Good luck with breakfast!"
-  - "Hallucija: There ya go, now you\u2019re feelin\u2019 it. Good luck with breakfast!"
---- !u!58 &1158135256
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1158135250}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 4.71
 --- !u!4 &1158250306 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4259886233088824857, guid: 5d0959b861d16ff438addfb985327415, type: 3}
@@ -20799,6 +20737,98 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d0959b861d16ff438addfb985327415, type: 3}
+--- !u!1 &1921490090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1921490091}
+  - component: {fileID: 1921490093}
+  - component: {fileID: 1921490092}
+  m_Layer: 0
+  m_Name: MushroomDialog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1921490091
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921490090}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.78, y: 0.54, z: 0}
+  m_LocalScale: {x: 0.4073, y: 0.4073, z: 0.4073}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1921490092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921490090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 608b25435cc4f43259d33a7ca878ed63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 1376891226}
+  textDisplay: {fileID: 1134338868}
+  dialogTextLines:
+  - 'Hallucija: Duuuuuuuuuuuuuuuuuuuude, welcome to my a-MAZE-ing home!'
+  - 'Konnrad: Huh? Why do you sound like that?'
+  - "Hallucija: Cuz I\u2019m enjoying lifeeeeee, you should try it out! Wait, you\u2019re
+    a\u2026 frog? How\u2019d you get here bro?"
+  - "Konnrad: Well, to be honest, I\u2019m just trying to have breakfast. I already
+    have an egg!"
+  - "Hallucija: Woahhhh\u2026 What's an egg?"
+  - "Konnrad: Nevermindddd\u2026 woah."
+  - "Hallucija: There ya go, now you\u2019re feelin\u2019 it. Good luck with breakfast!"
+--- !u!58 &1921490093
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921490090}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3.87
 --- !u!1001 &1930351490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23297,4 +23327,5 @@ SceneRoots:
   - {fileID: 1747302268}
   - {fileID: 1657726132}
   - {fileID: 1158135252}
+  - {fileID: 1921490091}
   - {fileID: 1743920657}
