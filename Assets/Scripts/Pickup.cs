@@ -11,9 +11,11 @@ public class Pickup : MonoBehaviour
     private bool isTyping = false;
     public SceneTransition sceneTransition;
 
+    private bool activeDialog = false;
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && activeDialog)
         {
             ContinueDialog();
         }
@@ -23,6 +25,7 @@ public class Pickup : MonoBehaviour
     {
         Time.timeScale = 0f;
         panel.gameObject.SetActive(true);
+        activeDialog = true;
         StartCoroutine(Typing());
     }
 
@@ -30,6 +33,7 @@ public class Pickup : MonoBehaviour
     {
         if (isTyping) return;
         panel.gameObject.SetActive(false);
+        activeDialog = false;
         Time.timeScale = 1f;
         if (sceneTransition) sceneTransition.itemCollected = true;
         GetComponent<SpriteRenderer>().enabled = false;
