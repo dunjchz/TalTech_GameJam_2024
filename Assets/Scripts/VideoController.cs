@@ -1,27 +1,21 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Video;
 
 public class VideoController : MonoBehaviour
 {
-
-public class VideoPlayerController : MonoBehaviour
-{
-    private VideoPlayer videoPlayer;
+    public float videoDuration;
 
     void Start()
     {
-        videoPlayer = GetComponent<VideoPlayer>();
-        videoPlayer.loopPointReached += OnVideoEnd;
+        StartCoroutine(EndVideo());
     }
 
-    void OnVideoEnd(VideoPlayer vp)
+    IEnumerator EndVideo()
     {
-            // Load the next scene when the video finishes playing
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-     }
-}
+        yield return new WaitForSecondsRealtime(videoDuration);
+        // Load the next scene when the video finishes playing
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 
 }

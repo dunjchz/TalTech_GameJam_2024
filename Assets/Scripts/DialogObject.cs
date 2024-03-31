@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -14,6 +13,8 @@ public class DialogObject : MonoBehaviour
 
     private bool activeDialog = false;
 
+    private Coroutine textTyping = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +25,14 @@ public class DialogObject : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && activeDialog)
         {
-            ContinueDialog();
+            if (textTyping is null) ContinueDialog();
+            else
+            {
+                StopCoroutine(textTyping);
+                isTyping = false;
+                textTyping = null;
+                textDisplay.text = dialogTextLines[index];
+            }
         }
     }
 
@@ -44,7 +52,7 @@ public class DialogObject : MonoBehaviour
 
         if (index < dialogTextLines.Length)
         {
-            StartCoroutine(Typing());
+            textTyping = StartCoroutine(Typing());
         }
         else
         {
@@ -62,6 +70,7 @@ public class DialogObject : MonoBehaviour
             yield return new WaitForSecondsRealtime(0.02f);
         }
         isTyping = false;
+        textTyping = null;
     }
 
     private void ResetDialog()

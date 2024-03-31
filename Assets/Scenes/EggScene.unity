@@ -2016,6 +2016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuPanel: {fileID: 1607983037}
+  cutsceneSceneName: 
 --- !u!1 &696271343
 GameObject:
   m_ObjectHideFlags: 0
@@ -2601,7 +2602,7 @@ MonoBehaviour:
   - Code is correct, Konnrad has aquired an egg!
   - 'Konnrad: Aha, so this is what the chicken were talking about. Egg-straordinary,
     one ingredient down!'
-  - 'Koonard: So far this is actually quite egg-citing. '
+  - 'Konnrad: So far this is actually quite egg-citing. '
 --- !u!4 &829988105
 Transform:
   m_ObjectHideFlags: 0
@@ -4922,7 +4923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionPoint: {fileID: 1546384474}
-  egg: 0
+  itemCollected: 0
 --- !u!1 &1479923787
 GameObject:
   m_ObjectHideFlags: 0
