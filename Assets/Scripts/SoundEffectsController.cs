@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SoundEffectsController : MonoBehaviour
@@ -7,6 +6,7 @@ public class SoundEffectsController : MonoBehaviour
     public AudioClip soundClip;  // Reference to your sound clip
     public float playbackSpeed = 0.5f; // Adjust this value to change playback speed
     public float pauseDuration = 1.0f;  // Adjust this value to change the pause duration
+    public float volume = 1.0f;
 
     private AudioSource audioSource;
 
@@ -25,6 +25,8 @@ public class SoundEffectsController : MonoBehaviour
         audioSource.loop = true;
         // Set the playback speed
         audioSource.pitch = playbackSpeed;
+        // Set volume
+        audioSource.volume = volume;
         // Start playing the sound
         audioSource.Play();
 

@@ -277,4 +277,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundClip: {fileID: 8300000, guid: aad2ac474c4cc43a3af5652cb8614477, type: 3}
   playbackSpeed: 0.5
-  pauseDuration: 1.5
+  pauseDuration: 4
+  volume: 0.5
